@@ -5,7 +5,7 @@ import Status from './components/Status';
 //   await new Promise(resolve => setTimeout(resolve, 10000));
 //   return import('./components/Status');
 // });
-import StatList from './components/StatusList';
+// import StatList from './components/StatusList';
 
 export interface QueryProps {
   q: string;
@@ -16,12 +16,17 @@ const App = () => {
 
   return (
     <div className="white-bg">
-      <img className="home-icon" src="src/assets/images/http-dog-home.png" alt="HTTPDog home icon"/>
-      <div className="loading-icon"></div>
-      <Suspense fallback={<p>Loading...</p>}>
+      <div className="navbar">
+        <img className="home-icon" src="src/assets/images/http-dog-home.png" alt="HTTPDog home icon"/>
+        <button>See All HTTP Dogs</button>
+      </div>
+      <Suspense fallback={<div className="loading-icon"></div>}>
         <Status q={status} />
-        <StatList />
       </Suspense>
+      <div className="searchbar center">
+        <input placeholder="Enter HTTP status code" type='text' />
+        <button>Search</button>
+      </div>
     </div>
   );
 };

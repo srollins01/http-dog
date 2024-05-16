@@ -94,6 +94,12 @@ button:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.137);
 }
 
+.notfound-img {
+  width: 350px;
+  height: 250px;
+  border-radius: 10px;
+}
+
 .loading-icon {
   width: 200px;
   height: 200px;

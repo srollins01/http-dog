@@ -12,13 +12,18 @@ export interface QueryProps {
 }
 
 const App = () => {
-  const [status, setStatus] = useState('401');
+  const [status, setStatus] = useState('200');
+  const [dogs, setDogs] = useState (false);
+
+  const displayAllDogs = () => {
+    setDogs(!dogs);
+  }
 
   return (
     <div className="white-bg">
       <div className="navbar">
         <img className="home-icon" src="src/assets/images/http-dog-home.png" alt="HTTPDog home icon"/>
-        <button>See All HTTP Dogs</button>
+        <button onClick={displayAllDogs}>{dogs ? "Hide" : "See"} All HTTP Dogs</button>
       </div>
       <Suspense fallback={<div className="loading-icon"></div>}>
         <Status q={status} />
@@ -27,7 +32,7 @@ const App = () => {
         <input placeholder="Enter HTTP status code" type='text' />
         <button>Search</button>
       </div>
-      <StatList />
+      {dogs && <StatList />}
     </div>
   );
 };

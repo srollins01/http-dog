@@ -1,0 +1,1 @@
+import{j as t,s as a}from"./index-BBnDo7zf.js";const o=({q:s})=>t.jsx("div",{className:"center",children:t.jsx("img",{className:a.includes(s)?"dogstat-img-main":"notfound-img",src:a.includes(s)?`https://http.dog/${s}.jpg`:"src/assets/images/nodogsfound.png",alt:"http status code dog"})});export{o as default};

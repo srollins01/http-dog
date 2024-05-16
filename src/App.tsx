@@ -15,8 +15,8 @@ const App = () => {
   const [status, setStatus] = useState('401');
 
   return (
-    <div>
-      <h1>HTTPDog</h1>
+    <div className="white-bg">
+      <img className="home-icon" src="src/assets/images/http-dog-home.png" alt="HTTPDog home icon"/>
       <div className="loading-icon"></div>
       <Suspense fallback={<p>Loading...</p>}>
         <Status q={status} />

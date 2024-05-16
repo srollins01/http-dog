@@ -3,7 +3,6 @@
 
 :root {
   font-family: Arial, sans-serif;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.584), rgba(255, 255, 255, 0.295)),  url('src/assets/images/pawprint-bg.jpg');
 }
 
 input {
@@ -106,7 +105,6 @@ button:hover {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  background: url('src/assets/images/loading-dog.gif');
   background-size: 300px 300px;
   background-position: 40% 55%;
   border-radius: 100%;

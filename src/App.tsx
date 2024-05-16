@@ -6,6 +6,9 @@ const Status = React.lazy(async () => {
   return import('./components/Status');
 });
 import StatList from './components/StatusList';
+import homeicon from './assets/images/http-dog-home.png';
+import loadingimg from './assets/images/loading-dog.gif';
+import bgimg from './assets/images/pawprint-bg.jpg';
 
 export interface QueryProps {
   q: string;
@@ -35,14 +38,15 @@ const App = () => {
     setStatus(searchText);
   };
 
+  document.body.style.backgroundImage = `linear-gradient(to bottom, rgba(255, 255, 255, 0.584), rgba(255, 255, 255, 0.295)), url(${bgimg})`;
 
   return (
-    <div className="white-bg">
+    <div>
       <div className="navbar">
-        <img className="home-icon" src="src/assets/images/http-dog-home.png" alt="HTTPDog home icon"/>
+        <img className="home-icon" src={homeicon} alt="HTTPDog home icon"/>
         <button onClick={displayAllDogs}>{dogs ? "Hide" : "See"} All HTTP Dogs</button>
       </div>
-      <Suspense fallback={<div className="loading-icon"></div>}>
+      <Suspense fallback={<div style={{backgroundImage: `url(${loadingimg})`}} className="loading-icon"></div>}>
         <Status q={status} />
       </Suspense>
       <div className="searchbar center">

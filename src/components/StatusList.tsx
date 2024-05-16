@@ -6,8 +6,6 @@ const StatList = () => {
     '103',
     '200',
     '201',
-    '200',
-    '201',
     '202',
     '203',
     '204',
@@ -96,16 +94,17 @@ const StatList = () => {
     '999'
   ];
 
+
   return (
     <div>
-    {statusList.map((stat: string) => {
-      return (
-        <div key={stat}>
-          <img className="dogstat-img" src={`https://http.dog/${stat}.jpg`} alt="http status code dog"/>
-        </div>
-      );
-    })}
-  </div>
+      {statusList.map((stat: string) => {
+        return (
+          <div key={stat}>
+            <img className="dogstat-img" src={`https://http.dog/${stat}.jpg`} alt="http status code dog"/>
+          </div>
+        );
+      })}
+    </div>
   );
 };
 

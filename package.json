@@ -1,7 +1,7 @@
 {
   "name": "http-dog",
   "private": false,
-  "homepage": "https://srollins01.github.io/",
+  "homepage": "https://srollins01.github.io/http-dog/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

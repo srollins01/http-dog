@@ -14,3 +14,10 @@
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.137);
 }
+
+@media (max-width: 640px) {
+  .col {
+    flex-basis: 100%;
+    padding: 10px;
+  }
+}

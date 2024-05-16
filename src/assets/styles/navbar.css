@@ -15,3 +15,12 @@
   height: 80px;
   margin-bottom: 20px;
 }
+
+@media (max-width: 480px) {
+  .navbar button {
+    margin-bottom: 30px;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 0 10px;
+  }
+}

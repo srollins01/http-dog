@@ -1,3 +1,6 @@
+@import url('./flex-card.css');
+@import url('./navbar.css');
+
 :root {
   font-family: Arial, sans-serif;
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.584), rgba(255, 255, 255, 0.295)),  url('src/assets/images/pawprint-bg.jpg');
@@ -75,27 +78,20 @@ button:hover {
   outline: 0;
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+}
 
 .searchbar {
   margin: 20px;
 }
 
-.dogstat-img {
+.dogstat-img-main {
   width: 350px;
   height: 300px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.137);
-}
-
-.home-icon {
-  width: 180px;
-  height: 80px;
-  margin-bottom: 20px;
-}
-
-.center {
-  display: flex;
-  justify-content: center;
 }
 
 .loading-icon {
@@ -110,16 +106,4 @@ button:hover {
   border-radius: 100%;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.263);
   filter: opacity(0.8) drop-shadow(0 0 0 rgb(125, 203, 255)) drop-shadow(0 0 0 rgb(125, 203, 255)) drop-shadow(0 0 0 rgb(125, 203, 255));
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.navbar button {
-  margin-bottom: 30px;
 }

@@ -96,11 +96,11 @@ const StatList = () => {
 
 
   return (
-    <div>
+    <div className="flex-grid">
       {statusList.map((stat: string) => {
         return (
-          <div key={stat}>
-            <img className="dogstat-img" src={`https://http.dog/${stat}.jpg`} alt="http status code dog"/>
+          <div className="col" key={stat}>
+              <img className="dogstat-img-card" src={`https://http.dog/${stat}.jpg`} alt="http status code dog"/>
           </div>
         );
       })}

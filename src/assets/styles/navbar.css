@@ -1,0 +1,17 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.navbar button {
+  margin-bottom: 30px;
+}
+
+.home-icon {
+  width: 180px;
+  height: 80px;
+  margin-bottom: 20px;
+}

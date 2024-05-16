@@ -5,7 +5,7 @@ import Status from './components/Status';
 //   await new Promise(resolve => setTimeout(resolve, 10000));
 //   return import('./components/Status');
 // });
-// import StatList from './components/StatusList';
+import StatList from './components/StatusList';
 
 export interface QueryProps {
   q: string;
@@ -27,6 +27,7 @@ const App = () => {
         <input placeholder="Enter HTTP status code" type='text' />
         <button>Search</button>
       </div>
+      <StatList />
     </div>
   );
 };

@@ -1,7 +1,7 @@
 # HTTPDog
 
 Find a dog for every HTTP status code 🐶
-Single-page search based on the HTTP Status Dogs API.
+Single-page image search based on the HTTP Status Dogs API.
 <br>
 <br>
 <table><tr><td>

@@ -1,0 +1,1 @@
+import{j as s,s as o}from"./index-jQAGGf67.js";const a=""+new URL("nodogsfound-D2Qb_8wv.png",import.meta.url).href,e=({q:t})=>s.jsx("div",{className:"center",children:s.jsx("img",{className:o.includes(t)?"dogstat-img-main":"notfound-img",src:o.includes(t)?`https://http.dog/${t}.jpg`:`${a}`,alt:"http status code dog"})});export{e as default};
